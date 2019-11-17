@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define max 999
-char n();
+int n();
 //int v();
 //int u();
 //int s();
@@ -37,23 +37,28 @@ int main() //telo
 	return 0;
 }
 
-char n()
-{
+int n()
+{   
+	int povodnytext[max],pismeno,pocetznakov;
 	FILE *fr;
-	int povodnytext[max],pismeno;
+	fr = fopen("sifra.txt","r");
 	if ((fr = fopen("sifra.txt","r"))==NULL)
 	{
 		printf("Spravu sa nepodarilo nacitat\n");
+		return 0;
 	}
-	for (int pocetznakov=0; pocetznakov <=max; pocetznakov++)
+	for (pocetznakov=0; pocetznakov <=max; pocetznakov++)
 	{
 		pismeno = getc(fr);
 		povodnytext[pocetznakov]=pismeno;
 	}
+	fclose(fr);
 	if (fclose(fr)==EOF)
 	{
 		printf("Subor sa nepodarilo zatvorit");
+		return 0;
 	}
+	return 0;
 }
 
 
