@@ -41,7 +41,6 @@ int n()
 {   
 	int povodnytext[max],pismeno,pocetznakov;
 	FILE *fr;
-	fr = fopen("sifra.txt","r");
 	if ((fr = fopen("sifra.txt","r"))==NULL)
 	{
 		printf("Spravu sa nepodarilo nacitat\n");
