@@ -188,7 +188,7 @@ void c(int upravenyText[], int velkePismena)
 			sifra = upravenyText[iteracia] - posun;
 			if (sifra < 'A')
 			{
-				cezarka = sifra + VELKEPISMENO;
+				cezarka = sifra + ABECEDA;
 				printf("%c",cezarka);
 			}	
 			else 
