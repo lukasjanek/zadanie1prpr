@@ -2,6 +2,8 @@
 #define MAX 999
 #define ABECEDA 'Z' - 'A' + 1
 #define VELKEPISMENO 32
+#define MINPOCETZNAKOV 1
+#define MAXPOCETZNAKOV 100
 void n(int povodnyText[],int *dlzkaSuboru) 
 {   	
 	FILE *fsifra;	
@@ -73,7 +75,7 @@ void d(int povodnyText[], int dlzkaSuboru)
 {
 	int dlzkaSlova,drzac=0,pocetZnakov,zaciatok=0,medzera=0;
 	scanf("%d",&dlzkaSlova);
-	if (dlzkaSlova >=1 && dlzkaSlova <= 100)
+	if (dlzkaSlova >=MINPOCETZNAKOV && dlzkaSlova <= MAXPOCETZNAKOV)
 	{
 		
 		for (pocetZnakov = 0; pocetZnakov < dlzkaSuboru; pocetZnakov++)
