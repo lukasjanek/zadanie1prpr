@@ -1,7 +1,6 @@
 #include <stdio.h>
 #define MAX 999
 #define ABECEDA 'Z' - 'A' + 1
-#define VELKEPISMENO 32
 #define MINPOCETZNAKOV 1
 #define MAXPOCETZNAKOV 100
 void n(int povodnyText[],int *dlzkaSuboru) 
