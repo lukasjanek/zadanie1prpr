@@ -6,7 +6,7 @@
 void n(int povodnyText[],int *dlzkaSuboru) 
 {   	
 	FILE *fsifra;	
-	if ((fsifra = fopen("sifra.txt","r"))!=NULL)
+	if ((fsifra = fopen("sifra.txt","r"))!=NULL) //snamiesto sifra.txt hocijaky .txt alebo .dat
 	{ 
 		int pismeno,pocetZnakov;
 		pocetZnakov=0;
